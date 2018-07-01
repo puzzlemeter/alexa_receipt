@@ -1,0 +1,10 @@
+{
+    "access_key": "",
+    "secret_key": "",
+    "region": "ap-northeast-1", //東京だったらこれ
+    "logo_path": "./logo/thumb3.png",
+    "receipt_base_height": 50,
+    "receipt_base_width": 320,
+    "text_height": 30,
+    "text_right_axis": 200
+}
