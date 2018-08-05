@@ -8,7 +8,8 @@ import time
 import random
 
 config = {}
-MODE = "layout" # or "prod"
+# use layout will print out the context from response_mock.json instead connect to the server
+MODE = "prod" # "layout" or "prod"
 
 def read_config():
     f = open("config.json", 'r')
@@ -62,21 +63,18 @@ def printout(img_name):
     time.sleep(5.0)
     usb.image(img_name)
     usb.cut()
-#     usb.text("test\n")
 
 def main():
     read_config()
     records = {}
     if (MODE == "prod") :
         dynamodb = access_to_dynamodb()
-        records  = get_all(dynamodb)
+        records = get_all(dynamodb)
     else :
-        print("modify layout")
-        f = open("response.json", 'r')
+        f = open("response_mock.json", 'r')
         records = json.load(f)
 
     saved_name = imgid_to_image(records)
-    # print(saved_name)
     printout(saved_name)
 
 if __name__=='__main__':

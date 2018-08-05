@@ -1,0 +1,32 @@
+[
+    {
+        "username": "ソニア",
+        "id": "6d3x5xbec6kfahlgqr529",
+        "price": 10000,
+        "name": "自転車"
+    },
+    {
+        "username": "sonia",
+        "id": "qbv7r8deuxy3ad5tgldi",
+        "price": 100,
+        "name": "フルーツ"
+    },
+    {
+        "username": "ソニア",
+        "id": "rixgspvwis79mg0t3xr",
+        "price": 15000,
+        "name": "キーボード"
+    },
+    {
+        "username": "ソニア",
+        "id": "dtri752nr80h7oczyqfr",
+        "price": 500,
+        "name": "カルビ"
+    },
+    {
+        "username": "ソニア",
+        "id": "ssgyty45iqhuj2ejc3di",
+        "price": 800,
+        "name": "牛タン"
+    }
+]
